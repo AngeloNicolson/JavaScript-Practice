@@ -1,0 +1,9 @@
+let numberArray = [1,2,3,4,5,6,7];
+
+const outcome = (number) => {
+    return number + number;
+}
+
+const newArray = numberArray.map(outcome);
+
+console.log(newArray);
