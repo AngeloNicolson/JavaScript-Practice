@@ -14,14 +14,14 @@ const person = {
   const object = {
     firstName: 'Angelo',
     lastName: 'Nicolson',
-    object5: {
     object1: {
-      object2: {
+    object2: {
+      object3: {
         master: 'Chief',
         harry: 'Potter',
       },
-      object3: {
-        han: 'solo'
+      object4: {
+        han: 'Solo'
       }
     }
 }
@@ -32,8 +32,8 @@ const person = {
 
 
   /* Destructuring several layers deep. Remember to call Layers like so: object.links.social; */
-  const { master,harry,} = object.object5.object1.object2;
-  const { han } = object.object5.object1.object3;
+  const { master,harry,} = object.object1.object2.object3;
+  const { han } = object.object1.object2.object4;
 
 // logs the variables
   console.log(master, harry, han); 
