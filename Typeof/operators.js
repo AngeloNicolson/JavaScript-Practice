@@ -10,5 +10,7 @@ console.log(typeof undefined);
 console.log(typeof { age: 10 });
 // Described as object but is actually a javascript bug. More info || https://2ality.com/2013/10/typeof-null.html
 console.log(typeof null);
-// This returns as an object.
+// This returns as an object even though it is an array.
+// Thats because Javascript doesnt have the ability to differentiate between type object and an objects subtype.
+//Arrays are a sub type of object and not a primitive type.
 console.log(typeof [1, 2, 3]);
