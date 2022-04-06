@@ -1,6 +1,7 @@
 const myDisplayer = (something) => {
   console.log(">>" + something + "<<");
 };
+// console.log(somthing);
 
 const myCalculator = (num1, num2, myCallback) => {
   const sum = num1 + num2;
@@ -8,5 +9,4 @@ const myCalculator = (num1, num2, myCallback) => {
 };
 
 myCalculator(1, 6, myDisplayer);
-
-myCalculator(8, 16, myDisplayer);
+myCalculator(9, 68, myDisplayer);
