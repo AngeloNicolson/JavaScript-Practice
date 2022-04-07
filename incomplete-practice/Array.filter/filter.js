@@ -5,15 +5,15 @@ console.log(`Original array: ${numberArray}`);
 const outcome = (number) => {
   const newNumber = number + number;
   console.log(
-    `Outcome gets a number assigned to it from numberArray.map: ${number} + ${number} Then assign ${newNumber} to newArray`
+    `Outcome gets a number assigned to it from numberArray.map: ${number} + ${number} New array number = ${newNumber}`
   );
   return newNumber;
 };
 
 // Mapping over numberArray, This pushes number stored in array to outcome. Outcome returns number + number (outcome + outcome) to newArray
-const newArray = numberArray.map(outcome);
+const newArray = numberArray.filter(outcome);
 console.log(
-  `This gets passed into outcome then to number: ${numberArray} "this then gets multiplied by its own number through the outcome function. Continues with each array item passed from the .map function"`
+  `This gets passed into outcome then to number: ${numberArray} "this then gets multiplied by its own number through each pass of the .map function"`
 );
 
 console.log(`New array: ${newArray}`);
